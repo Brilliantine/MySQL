@@ -49,6 +49,7 @@
     SELECT title AS Название, author AS Автор  FROM book;
  ```
  ***Результат:***</br>
- ![2022-05-19_17-19-17](https://user-images.githubusercontent.com/40222971/169316285-0d2a6542-a7d8-4d20-bb47-07c8d195947d.png)
+ ![2022-05-19_17-20-10](https://user-images.githubusercontent.com/40222971/169316685-3e311e00-107a-4b0b-9633-29a80a6175b4.png)
+
 
 
