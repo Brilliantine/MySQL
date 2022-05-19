@@ -74,5 +74,5 @@
 ```MySQL
     SELECT author, title, price FROM book WHERE amount < 10;
 ```
-***Результат:***
+***Результат:***</br>
 ![2022-05-19_17-36-09](https://user-images.githubusercontent.com/40222971/169322457-8288fb95-540c-4398-a544-b23c145a72f2.png)
