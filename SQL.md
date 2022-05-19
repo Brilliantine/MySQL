@@ -213,4 +213,5 @@
     ORDER BY Стоимость DESC;
 ```
 ***Результат:***</br>
-![2022-05-19_20-56-41](https://user-images.githubusercontent.com/40222971/169366501-59880535-1371-4360-8cc5-0dd9d4dc2776.png)
+![2022-05-19_20-57-27](https://user-images.githubusercontent.com/40222971/169366839-dd469770-b37a-41c2-9a97-20d7a4beb673.png)
+
