@@ -286,5 +286,5 @@
     FROM book
     WHERE amount < (SELECT MAX(amount) FROM book);
 ```
-***Результат:***
+***Результат:***</br>
 ![2022-05-19_22-51-55](https://user-images.githubusercontent.com/40222971/169392131-46e1e034-6a0f-47ec-89b4-8d9b017e58ad.png)
