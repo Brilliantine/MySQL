@@ -34,5 +34,5 @@
 ```MySQL
     SELECT * FROM book;
  ```
- ***Результат:***
+ ***Результат:***</br>
 ![2022-05-19_17-11-30](https://user-images.githubusercontent.com/40222971/169314643-8caf59c8-7bd9-43c2-8752-219eea4ee429.png)
