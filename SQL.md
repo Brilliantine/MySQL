@@ -43,4 +43,12 @@
  ```
  ***Результат:***</br>
  ![2022-05-19_17-15-53](https://user-images.githubusercontent.com/40222971/169315468-ffce4296-bdde-46b3-a063-1a14d725ef3c.png)
+ ### Выборка новых столбцов и присвоение им новых имен
+ ***Запрос:***
+ ```MySQL
+    SELECT title AS Название, author AS Автор  FROM book;
+ ```
+ ***Результат:***</br>
+ ![2022-05-19_17-19-17](https://user-images.githubusercontent.com/40222971/169316285-0d2a6542-a7d8-4d20-bb47-07c8d195947d.png)
+
 
