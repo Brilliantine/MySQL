@@ -1,5 +1,5 @@
 # MySQL
 ## Примеры SQL запросов
-```SQL
+```MySQL
       CREATE TABLE 
 ```
