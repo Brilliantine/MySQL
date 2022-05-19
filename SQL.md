@@ -36,3 +36,11 @@
  ```
  ***Результат:***</br>
 ![2022-05-19_17-11-30](https://user-images.githubusercontent.com/40222971/169314643-8caf59c8-7bd9-43c2-8752-219eea4ee429.png)
+### Выборка отдельных столбцов
+***Запрос:***
+```MySQL
+    SELECT author, title, price FROM book;
+ ```
+ ***Результат:***</br>
+ ![2022-05-19_17-15-53](https://user-images.githubusercontent.com/40222971/169315468-ffce4296-bdde-46b3-a063-1a14d725ef3c.png)
+
