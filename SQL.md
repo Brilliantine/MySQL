@@ -121,12 +121,20 @@
 ![2022-05-19_20-04-43](https://user-images.githubusercontent.com/40222971/169357530-1fbea54e-2846-4dce-a780-00692f4c5fab.png)
 ## Запросы, групповые операции
 ### Выбор уникальных элементов столбца
-Выбререм различных авторов, книги которых хранятся в таблице `book`.</br>
+Выбререм различных авторов, книги которых хранятся в таблице `book`с помощью оператора DISTINCT.</br>
 ***Запрос:***
 ```MySQL
     SELECT DISTINCT author
-FROM book;
+    FROM book;
 ```
 ***Результат:***</br>
 ![2022-05-19_20-11-44](https://user-images.githubusercontent.com/40222971/169358590-c732f3c2-d479-44b2-b811-100126eb581c.png)
-
+ОтобTHTV уникальные элементы столбца `amount` таблицы `book` при помощи GROUP BY.</br>
+***Запрос:***
+```MySQL
+    SELECT amount
+    FROM book
+    GROUP BY amount;
+```
+***Результат:***</br>
+![2022-05-19_20-16-11](https://user-images.githubusercontent.com/40222971/169359279-f90abb7f-da1f-457f-9450-c133aeb7c685.png)
