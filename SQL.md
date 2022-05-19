@@ -1,6 +1,6 @@
 # MySQL
 ## Примеры SQL запросов
-### Создадим таблицу `book`
+### Создадим таблицу `book` c ключевым столбцом book_id значение которого будет генерироваться автоматически,
 ```MySQL
       CREATE TABLE book(
     book_id INT PRIMARY KEY AUTO_INCREMENT,
