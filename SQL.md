@@ -246,7 +246,7 @@
     WHERE amount IN (
            SELECT amount FROM book
            GROUP BY amount
-  HAVING COUNT(amount) = 1);
+   HAVING COUNT(amount) = 1);
 ```
 ***Результат:***</br>
 ![2022-05-19_21-09-51](https://user-images.githubusercontent.com/40222971/169371215-5438e5f1-6098-45d3-9d37-6fa2460e0b03.png)
