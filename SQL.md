@@ -239,3 +239,14 @@
 ***Результат:***</br>
 ![2022-05-19_21-06-43](https://user-images.githubusercontent.com/40222971/169369951-fde44d38-3689-467e-81d9-46fa78abc643.png)
 #### Вложенный запрос, оператор IN
+Выведем информацию (автора, книгу и количество) о тех книгах, количество экземпляров которых в таблице `book` не дублируется.</br>
+***Запрос:***
+```MySQL
+    SELECT author, title, amount FROM book
+    WHERE amount IN (
+           SELECT amount FROM book
+           GROUP BY amount
+  HAVING COUNT(amount) = 1);
+```
+***Результат:***</br>
+![2022-05-19_21-09-51](https://user-images.githubusercontent.com/40222971/169371215-5438e5f1-6098-45d3-9d37-6fa2460e0b03.png)
