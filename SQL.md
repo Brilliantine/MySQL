@@ -250,3 +250,28 @@
 ```
 ***Результат:***</br>
 ![2022-05-19_21-09-51](https://user-images.githubusercontent.com/40222971/169371215-5438e5f1-6098-45d3-9d37-6fa2460e0b03.png)
+### Вложенный запрос, операторы ANY и ALL
+Выведем информацию о книгах(автор, название, цена), цена которых меньше самой большой из минимальных цен, вычисленных для каждого автора.</br>
+***Запрос***
+```MySQL
+    SELECT author, title, price FROM book
+    WHERE price < ANY (
+            SELECT AVG(price) FROM book
+            GROUP BY author);
+```
+***Результат:***</br>
+![2022-05-19_22-45-25](https://user-images.githubusercontent.com/40222971/169389975-74cf115b-0733-4620-abff-e092a7727c8c.png)
+Выведем информацию о тех книгах, количество которых меньше самого маленького среднего количества книг каждого автора.</br>
+***Запрос:***
+```MySQL
+    SELECT title, author, amount, price
+    FROM book
+    WHERE amount < ALL (
+        SELECT AVG(amount) 
+        FROM book 
+        GROUP BY author 
+      );
+```
+***Результат:***</br>
+![2022-05-19_22-42-10](https://user-images.githubusercontent.com/40222971/169389450-d7f0a54b-a698-4350-897d-c1686e86449d.png)
+
