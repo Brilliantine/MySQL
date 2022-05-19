@@ -68,4 +68,11 @@
 ```
 ***Результат:***</br>
 ![2022-05-19_17-31-34](https://user-images.githubusercontent.com/40222971/169320944-5490be89-5dbe-4600-b816-ba2e5ef5b739.png)
-
+### Выборка данных по условию
+Выведим автора, название  и цены тех книг, количество которых меньше 10.</br>
+***Запрос:***
+```MySQL
+    SELECT author, title, price FROM book WHERE amount < 10;
+```
+***Результат:***
+![2022-05-19_17-36-09](https://user-images.githubusercontent.com/40222971/169322457-8288fb95-540c-4398-a544-b23c145a72f2.png)
