@@ -150,3 +150,5 @@
 ```
 ***Результат:***</br>
 ![2022-05-19_20-23-36](https://user-images.githubusercontent.com/40222971/169360558-44f55d1e-731a-4a8f-ad40-b3ca359cfdda.png)
+### Выборка данных, групповые функции MIN, MAX и AVG
+
