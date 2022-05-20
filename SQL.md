@@ -37,6 +37,8 @@
  - [Связи между таблицами](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#связи-между-таблицами)
     - [Создание таблицы с внешними ключами](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#создание-таблицы-с-внешними-ключами)
     - [Действия при удалении записи главной таблицы](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#действия-при-удалении-записи-главной-таблицы)
+ - [Запросы на выборку, соединение таблиц](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-выборку-соединение-таблиц)
+    - [Соединение INNER JOIN](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#соединение-inner-join) 
 
     
 
