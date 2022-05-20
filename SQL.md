@@ -318,7 +318,8 @@
 ***Результат:***</br>
 ![2022-05-19_22-51-55](https://user-images.githubusercontent.com/40222971/169392131-46e1e034-6a0f-47ec-89b4-8d9b017e58ad.png)
 ## Запросы корректировки данных
-Создадим новую таблицу `supply`.
+Создадим новую таблицу `supply`.</br>
+***Запрос:***
 ```MySQL
     CREATE TABLE supply (
     supply_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -328,7 +329,8 @@
     amount INT
     );
 ```
-Добавим записи в нашу таблицу.
+Добавим записи в нашу таблицу.</br>
+***Запрос:***
 ```MySQL
 INSERT INTO supply (title, author, price, amount)
 VALUES
@@ -337,3 +339,16 @@ VALUES
         ('Белая гвардия','Булгаков М.А.', 540.50, 7),
         ('Идиот', 'Достоевский Ф.М.', 360.80, 3);
 ```
+### Добавление записей из другой таблицы
+Добавим из таблицы `supply` в таблицу `book`, все книги, кроме книг, написанных Булгаковым М.А. и Достоевским Ф.М.</br>
+***Запрос:***
+```MySQL
+INSERT INTO book (title, author, price, amount)
+SELECT title, author, price, amount
+FROM supply
+WHERE author NOT IN ('Достоевский Ф.М.','Булгаков М.А.');
+```
+***Результат:***</br>
+![2022-05-20_11-03-27](https://user-images.githubusercontent.com/40222971/169482995-8c112301-9a43-4cb7-95a1-41997365986e.png)
+### Добавление записей, вложенные запросы
+Занесем из таблицы `supply` в таблицу `book` только те книги, авторов которых нет в  `book`.</br>
