@@ -505,3 +505,17 @@ ORDER BY price DESC;
 ```
 ***Результат:***</br>
 ![2022-05-20_13-09-07](https://user-images.githubusercontent.com/40222971/169506320-bb9397ec-5f07-430a-90ee-c405cf98ba49.png)
+### Внешнее соединение LEFT и RIGHT OUTER JOIN
+Выведем все жанры, которые не представлены в книгах на складе.</br>
+***Логическая схема:***</br>
+![2022-05-20_13-19-19](https://user-images.githubusercontent.com/40222971/169507863-5737571c-d154-4a08-8383-629d2019ac43.png)
+
+***Запрос:***
+```MySQL
+SELECT name_genre
+FROM genre LEFT JOIN book
+     ON genre.genre_id = book.genre_id
+     WHERE title is NULL;
+```
+***Результат:***</br>
+![2022-05-20_13-20-38](https://user-images.githubusercontent.com/40222971/169508063-f6a936f6-cab7-4a8e-be22-014d539a38a3.png)
