@@ -347,6 +347,7 @@ INSERT INTO book (title, author, price, amount)
 SELECT title, author, price, amount
 FROM supply
 WHERE author NOT IN ('Достоевский Ф.М.','Булгаков М.А.');
+SELECT * FROM book;
 ```
 ***Результат:***</br>
 ![2022-05-20_11-03-27](https://user-images.githubusercontent.com/40222971/169482995-8c112301-9a43-4cb7-95a1-41997365986e.png)
@@ -359,7 +360,29 @@ SELECT title, author, price, amount
 FROM supply
 WHERE author NOT IN(
     SELECT author FROM book);
+SELECT * FROM book;
 ```
 ***Результат:***</br>
 ![2022-05-20_11-09-06](https://user-images.githubusercontent.com/40222971/169484000-5c5506f9-04b0-4f6f-a74a-64ad2e1b980d.png)
 ### Запросы на обновление
+Уменьшим на 10% цену тех книг в таблице `book`, количество которых принадлежит интервалу от 5 до 10, включая границы.</br>
+***Запрос:***
+```MySQL
+UPDATE book
+SET price = 0.9 * price
+WHERE amount BETWEEN 5 AND 10;
+SELECT * FROM book;
+```
+***Результат:***</br>
+![2022-05-20_11-26-47](https://user-images.githubusercontent.com/40222971/169487404-c837f3d2-43e0-4863-80c6-0b2d60a564b7.png)
+### Запросы на обновление нескольких столбцов
+В таблице `book` скорректируем значение для покупателя в столбце `buy` таким образом, чтобы оно не превышало количество экземпляров книг, указанных в столбце `amount`. А цену тех книг, которые покупатель не заказывал, снизим на 10%.</br>
+***Запрос:***
+```MySQL
+UPDATE book
+SET price = IF(buy = 0, price*0.9, price),
+    buy = IF(buy > amount, amount, buy);
+SELECT * FROM book;
+```
+***Результат:***</br>
+![2022-05-20_11-32-15](https://user-images.githubusercontent.com/40222971/169488294-0580bd8d-7e78-40d1-801f-255eb55de1f1.png)
