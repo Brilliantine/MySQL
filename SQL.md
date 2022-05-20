@@ -352,3 +352,14 @@ WHERE author NOT IN ('Достоевский Ф.М.','Булгаков М.А.');
 ![2022-05-20_11-03-27](https://user-images.githubusercontent.com/40222971/169482995-8c112301-9a43-4cb7-95a1-41997365986e.png)
 ### Добавление записей, вложенные запросы
 Занесем из таблицы `supply` в таблицу `book` только те книги, авторов которых нет в  `book`.</br>
+***Запрос:***
+```MySQL
+INSERT INTO book (title, author, price, amount)
+SELECT title, author, price, amount
+FROM supply
+WHERE author NOT IN(
+    SELECT author FROM book);
+```
+***Результат:***</br>
+![2022-05-20_11-09-06](https://user-images.githubusercontent.com/40222971/169484000-5c5506f9-04b0-4f6f-a74a-64ad2e1b980d.png)
+### Запросы на обновление
