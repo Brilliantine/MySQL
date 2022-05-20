@@ -434,4 +434,39 @@ SELECT * FROM ordering;
 ***Результат:***</br>
 ![2022-05-20_12-05-18](https://user-images.githubusercontent.com/40222971/169494841-220b2f10-4d9a-41e2-8cc0-75a056595902.png)
 ## Связи между таблицами
+Создадим таблицу `author`</br>
+***Запрос:***
+```MySQL
+CREATE TABLE author(
+    author_id INT PRIMARY KEY AUTO_INCREMENT,
+    name_author VARCHAR(50)
+);
+```
+Заполним таблицу author</br>
+***Запрос:***
+```MySQL
+INSERT INTO author(name_author)
+VALUES
+    ('Булгаков М.А.'),
+    ('Достоевский Ф.М.'),
+    ('Есенин С.А.'),
+    ('Пастернак Б.Л.');
+```
 ### Создание таблицы с внешними ключами
+Создадим таблицу `book` таким образом, чтобы ее структура соответствовала структуре, показанной на логической схеме ниже (таблица genre уже создана, порядок следования столбцов - как на логической схеме в таблице `book`, `genre_id`  - внешний ключ).</br>
+***Логическая схема:***</br>
+![2022-05-20_12-49-59](https://user-images.githubusercontent.com/40222971/169502848-37c97287-8511-4cc3-ac5b-c79c8e8d082b.png)
+***Запрос:***</br>
+```MySQL
+CREATE TABLE book (
+    book_id INT PRIMARY KEY AUTO_INCREMENT, 
+    title VARCHAR(50), 
+    author_id INT NOT NULL,
+    genre_id INT,
+    price DECIMAL(8,2), 
+    amount INT, 
+    FOREIGN KEY (author_id)  REFERENCES author (author_id),
+    FOREIGN KEY (genre_id) REFERENCES genre (genre_id)
+);
+```
+### Действия при удалении записи главной таблицы
