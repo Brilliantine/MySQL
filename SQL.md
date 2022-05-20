@@ -14,7 +14,7 @@
     - [Выборка данных, операторы BETWEEN, IN.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-операторы-between-in)
     - [Выборка данных с сортировкой (ORDER BY).](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-с-сортировкой-order-by)
     - [Выборка данных, оператор LIKE.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-оператор-like)
-- [Запросы, групповые операции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#-запросы-групповые-операции)
+- [Запросы, групповые операции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-групповые-операции)
     - [Выбор уникальных элементов столбца.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выбор-уникальных-элементов-столбца)
     - [Выборка данных, групповые функции SUM и COUNT](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-групповые-функции-sum-и-count)
     - [Выборка данных, групповые функции MIN, MAX и AVG](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-групповые-функции-min-max-и-avg)
