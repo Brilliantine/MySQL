@@ -1,19 +1,19 @@
 # MySQL. Примеры запросов
 ## Оглавление
-- Таблица.
-    - Создание таблицы.
-    - Вставка записи в таблицу.
-- Выборка данных.
-    - Выборка всех данных из таблицы.
-    - Выборка отдельных столбцов.
-    - Выборка новых столбцов и присвоение им новых имен.
-    - Выборка данных с созданием вычисляемого столбца.
-    - Выборка данных, вычисляемые столбцы, логические функции.
-    - Выборка данных по условию.
-    - Выборка данных, логические операции.
-    - Выборка данных, операторы BETWEEN, IN.
-    - Выборка данных с сортировкой (ORDER BY).
-    - Выборка данных, оператор LIKE.
+- [Таблица.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#таблица)
+    - [Создание таблицы.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#создание-таблицы)
+    - [Вставка записи в таблицу.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вставка-записи-в-таблицу)
+- [Выборка данных.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных)
+    - [Выборка всех данных из таблицы.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-всех-данных-из-таблицы)
+    - [Выборка отдельных столбцов.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-отдельных-столбцов)
+    - [Выборка новых столбцов и присвоение им новых имен.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-новых-столбцов-и-присвоение-им-новых-имен)
+    - [Выборка данных с созданием вычисляемого столбца.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-с-созданием-вычисляемого-столбца)
+    - [Выборка данных, вычисляемые столбцы, логические функции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-вычисляемые-столбцы-логические-функции)
+    - [Выборка данных по условию.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-по-условию)
+    - [Выборка данных, логические операции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-логические-операции)
+    - [Выборка данных, операторы BETWEEN, IN.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-операторы-between-in)
+    - [Выборка данных с сортировкой (ORDER BY).](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-с-сортировкой-order-by)
+    - [Выборка данных, оператор LIKE.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-оператор-like)
 - [Запросы, групповые операции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#-запросы-групповые-операции)
     - [Выбор уникальных элементов столбца.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выбор-уникальных-элементов-столбца)
     
