@@ -442,7 +442,7 @@ CREATE TABLE author(
     name_author VARCHAR(50)
 );
 ```
-Заполним таблицу author</br>
+Заполним таблицу `author`</br>
 ***Запрос:***
 ```MySQL
 INSERT INTO author(name_author)
@@ -456,6 +456,7 @@ VALUES
 Создадим таблицу `book` таким образом, чтобы ее структура соответствовала структуре, показанной на логической схеме ниже (таблица genre уже создана, порядок следования столбцов - как на логической схеме в таблице `book`, `genre_id`  - внешний ключ).</br>
 ***Логическая схема:***</br>
 ![2022-05-20_12-49-59](https://user-images.githubusercontent.com/40222971/169502848-37c97287-8511-4cc3-ac5b-c79c8e8d082b.png)
+
 ***Запрос:***</br>
 ```MySQL
 CREATE TABLE book (
