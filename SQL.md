@@ -424,4 +424,15 @@ SELECT * FROM supply;
 ```
 ***Результат:***</br>
 ![2022-05-20_11-48-44](https://user-images.githubusercontent.com/40222971/169492169-7f5a4891-f48e-4e13-91c1-afa46cde74e6.png)
-
+### Запросы на создание таблицы
+Создадим таблицу заказов `ordering`, куда включим авторов и названия тех книг, количество экземпляров которых в таблице `book` меньше среднего количества экземпляров книг в таблице `book`. В таблицу включим столбец `amount`, в котором для всех книг укажем одинаковое значение - среднее количество экземпляров книг в таблице `book`.</br>
+***Запрос:***
+```MySQL
+CREATE TABLE ordering AS
+SELECT author, title, (SELECT AVG(amount) FROM book) AS amount
+FROM book
+WHERE amount < (SELECT AVG(amount) FROM book);
+SELECT * FROM ordering;
+```
+***Результат:***</br>
+![2022-05-20_12-05-18](https://user-images.githubusercontent.com/40222971/169494841-220b2f10-4d9a-41e2-8cc0-75a056595902.png)
