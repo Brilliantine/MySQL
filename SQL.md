@@ -26,7 +26,17 @@
     - [Использование вложенного запроса в выражении](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#использование-вложенного-запроса-в-выражении)
     - [Вложенный запрос, операторы ANY и ALL](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-операторы-any-и-all)
     - [Вложенный запрос после SELECT](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-после-select)
- - [Запросы корректировки данных](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-корректировки-данных) 
+ - [Запросы корректировки данных](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-корректировки-данных)
+    - [Добавление записей из другой таблицы](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#добавление-записей-из-другой-таблицы)
+    - [Добавление записей, вложенные запросы](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#добавление-записей-вложенные-запросы)
+    - [Запросы на обновление](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-обновление)
+    - [Запросы на обновление нескольких столбцов](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-обновление-нескольких-столбцов)
+    - [Запросы на обновление нескольких таблиц](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-обновление-нескольких-таблиц)
+    - [Запросы на удаление](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-удаление)
+    - [Запросы на создание таблицы](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-на-создание-таблицы)
+ - [Связи между таблицами](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#связи-между-таблицами)
+    - [Создание таблицы с внешними ключами](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#создание-таблицы-с-внешними-ключами)
+
     
 
 ## Таблица
