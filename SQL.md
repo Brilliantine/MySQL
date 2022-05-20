@@ -16,6 +16,17 @@
     - [Выборка данных, оператор LIKE.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-оператор-like)
 - [Запросы, групповые операции.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#-запросы-групповые-операции)
     - [Выбор уникальных элементов столбца.](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выбор-уникальных-элементов-столбца)
+    - [Выборка данных, групповые функции SUM и COUNT](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-групповые-функции-sum-и-count)
+    - [Выборка данных, групповые функции MIN, MAX и AVG](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-групповые-функции-min-max-и-avg)
+    - [Выборка данных c вычислением, групповые функции](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-c-вычислением-групповые-функции)
+    - [Вычисления по таблице целиком](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вычисления-по-таблице-целиком)
+    - [Выборка данных по условию, групповые функции, WHERE и HAVING](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#выборка-данных-по-условию-групповые-функции-where-и-having)
+ - [Вложенные запросы](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенные-запросы)
+    - [Вложенный запрос, возвращающий одно значение](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-возвращающий-одно-значение)
+    - [Использование вложенного запроса в выражении](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#использование-вложенного-запроса-в-выражении)
+    - [Вложенный запрос, операторы ANY и ALL](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-операторы-any-и-all)
+    - [Вложенный запрос после SELECT](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-после-select)
+    - 
     
 
 ## Таблица
@@ -137,7 +148,7 @@
 ```
 ***Результат:***</br>
 ![2022-05-19_20-04-43](https://user-images.githubusercontent.com/40222971/169357530-1fbea54e-2846-4dce-a780-00692f4c5fab.png)
-## <a name="Запросы"></a> Запросы, групповые операции
+## Запросы, групповые операции
 ### Выбор уникальных элементов столбца
 Выбререм различных авторов, книги которых хранятся в таблице `book`с помощью оператора `DISTINCT`.</br>
 ***Запрос:***
