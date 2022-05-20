@@ -26,7 +26,7 @@
     - [Использование вложенного запроса в выражении](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#использование-вложенного-запроса-в-выражении)
     - [Вложенный запрос, операторы ANY и ALL](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-операторы-any-и-all)
     - [Вложенный запрос после SELECT](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#вложенный-запрос-после-select)
-    - 
+ - [Запросы корректировки данных](https://github.com/Brilliantine/MySQL/blob/main/SQL.md#запросы-корректировки-данных) 
     
 
 ## Таблица
