@@ -423,5 +423,5 @@ WHERE author IN(
 SELECT * FROM supply;
 ```
 ***Результат:***</br>
-![Uploading 2022-05-20_11-48-44.png…]()
-### Запросы на создание таблицы
+![2022-05-20_11-48-44](https://user-images.githubusercontent.com/40222971/169492169-7f5a4891-f48e-4e13-91c1-afa46cde74e6.png)
+
