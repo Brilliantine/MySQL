@@ -386,3 +386,42 @@ SELECT * FROM book;
 ```
 ***Результат:***</br>
 ![2022-05-20_11-32-15](https://user-images.githubusercontent.com/40222971/169488294-0580bd8d-7e78-40d1-801f-255eb55de1f1.png)
+### Запросы на обновление нескольких таблиц
+Для тех книг в таблице `book` , которые есть в таблице `supply`, не только увеличим их количество в таблице `book` ( увеличим их количество на значение столбца `amount` таблицы `supply`), но и пересчитаем их цену (для каждой книги найдем сумму цен из таблиц `book` и `supply` и разделим на 2).</br>
+***Запрос:***
+```MySQL
+UPDATE book, supply
+SET book.amount = book.amount + supply.amount,
+    book.price = (book.price + supply.price)/2
+WHERE book.title = supply.title AND book.author = supply.author;
+SELECT * FROM book;
+```
+***Результат:***</br>
+![2022-05-20_11-40-23](https://user-images.githubusercontent.com/40222971/169489715-fa4eecf9-238a-4285-8612-f62fe577ead6.png)
+### Запросы на удаление
+Удалим из таблицы `supply` книги тех авторов, общее количество экземпляров книг которых в таблице `book` превышает 10.</br>
+***Запрос:***
+```MySQL
+DELETE FROM supply
+WHERE author IN(
+    SELECT author FROM book
+    WHERE amount >= 10
+    );
+SELECT * FROM supply;
+```
+***Результат:***</br>
+![2022-05-20_11-45-32](https://user-images.githubusercontent.com/40222971/169490799-914a5934-e049-4e2c-851a-0673558b6bee.png)
+### Запросы на удаление
+Удалим из таблицы `supply` книги тех авторов, общее количество экземпляров книг которых в таблице `book` превышает 10.</br>
+***Запрос:***
+```MySQL
+DELETE FROM supply
+WHERE author IN(
+    SELECT author FROM book
+    WHERE amount >= 10
+    );
+SELECT * FROM supply;
+```
+***Результат:***</br>
+![Uploading 2022-05-20_11-48-44.png…]()
+### Запросы на создание таблицы
